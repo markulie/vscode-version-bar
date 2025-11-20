@@ -1,0 +1,30 @@
+{
+  "name": "version-bar",
+  "displayName": "Version Bar",
+  "description": "Displays the versions of key development tools like Node.js, npm, TypeScript, NVM, and VS Code directly in the VS Code status bar for quick access and monitoring.",
+  "version": "0.1.2",
+  "license": "MIT",
+  "author": "markulie",
+  "type": "module",
+  "main": "./out/extension.js",
+  "scripts": {
+    "build": "node esbuild.js && vsce package"
+  },
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {},
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "@types/vscode": "^1.100.0",
+    "@vscode/vsce": "^3.3.2",
+    "esbuild": "^0.25.4",
+    "typescript": "^5.8.3"
+  }
+}
